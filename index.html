@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>大风大浪集团 - 官方网站</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "HarmonyOS Sans", "鸿蒙黑体", sans-serif;
+        }
+        header {
+            background: #0f3460;
+            color: white;
+            padding: 20px 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo {
+            font-size: 28px;
+            font-weight: bold;
+        }
+        nav a {
+            color: #fff;
+            margin-left: 30px;
+            text-decoration: none;
+            font-size: 16px;
+        }
+        .banner {
+            height: 60vh;
+            background: linear-gradient(rgba(15,52,96,0.8),rgba(15,52,96,0.8)), #16537e;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
+        }
+        .banner h1 {
+            font-size: 50px;
+            margin-bottom: 15px;
+        }
+        .banner p {
+            font-size: 20px;
+            opacity: 0.9;
+        }
+        section {
+            padding: 60px 5%;
+        }
+        .title {
+            text-align: center;
+            font-size: 32px;
+            color: #0f3460;
+            margin-bottom: 40px;
+        }
+        .about-box {
+            display: flex;
+            gap: 50px;
+            align-items: center;
+        }
+        .about-text {
+            flex:1;
+            font-size:17px;
+            line-height:1.8;
+            color:#333;
+        }
+        .brand-wrap {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap:30px;
+            margin-top:20px;
+        }
+        .brand-card {
+            background:#f0f7ff;
+            padding:30px;
+            border-radius:12px;
+            text-align:center;
+        }
+        .brand-card h3 {
+            font-size:22px;
+            color:#0f3460;
+            margin-bottom:10px;
+        }
+        .contact-box,.ceo-box {
+            background:#f0f7ff;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 35px;
+            border-radius: 12px;
+            font-size: 18px;
+            line-height: 2.2;
+        }
+        footer {
+            background:#0f3460;
+            color:#fff;
+            text-align:center;
+            padding:30px;
+            margin-top:20px;
+        }
+        /* 手机自适应 */
+        @media (max-width:768px) {
+            header {
+                flex-direction: column;
+                gap:15px;
+            }
+            nav {
+                display:flex;
+                flex-wrap: wrap;
+                justify-content:center;
+                gap:12px;
+            }
+            nav a {margin:0;}
+            .brand-wrap {grid-template-columns: 1fr;}
+            .banner h1 {font-size:32px;}
+        }
+    </style>
+</head>
+<body>
+    <!-- 顶部导航 -->
+    <header>
+        <div class="logo">大风大浪集团</div>
+        <nav>
+            <a href="#home">首页</a>
+            <a href="#about">集团简介</a>
+            <a href="#brand">旗下品牌</a>
+            <a href="#ceo">CEO介绍</a>
+            <a href="#contact">联系我们</a>
+        </nav>
+    </header>
+
+    <!-- 首屏横幅 -->
+    <div class="banner" id="home">
+        <h1>大风大浪集团</h1>
+        <p>乘风破浪，开拓全新产业版图</p>
+    </div>
+
+    <!-- 集团简介 -->
+    <section id="about">
+        <h2 class="title">集团简介</h2>
+        <div class="about-box">
+            <div class="about-text">
+                <p>大风大浪集团是综合产业集团，业务覆盖汽车制造、影像数码两大核心赛道，坚持创新发展理念。集团稳步扩张业务版图，打造年轻化、高性能产品，面向大众提供高性价比产品。集团秉持勇往直前的企业精神，不惧挑战，在行业内持续创新突破。</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 旗下品牌 -->
+    <section id="brand">
+        <h2 class="title">旗下知名品牌</h2>
+        <div class="brand-wrap">
+            <div class="brand-card">
+                <h3>风浪汽车</h3>
+                <p>高性能民用汽车研发制造品牌</p>
+            </div>
+            <div class="brand-card">
+                <h3>战神飞拍</h3>
+                <p>专业影像拍摄设备品牌</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CEO介绍 新增完整板块 -->
+    <section id="ceo">
+        <h2 class="title">集团CEO介绍</h2>
+        <div class="ceo-box">
+            <p>姓名：汤学臻</p>
+            <p>职位：大风大浪集团创始人、首席执行官</p>
+            <p>简介：统筹风浪汽车、战神飞拍两大核心品牌全部业务，专注汽车与影像设备创新研发，带领集团稳步拓展产业市场，以敢于直面大风大浪的理念打造优质产品。</p>
+        </div>
+        <!-- 联系我们 -->
+     <section id="contact">
+         <h2 class="title">联系我们</h2>
+         <div class="contact-box">
+             <p>联系电话：15008394684</p>
+             <p>企业邮箱：3638262982@qq.com</p>
+         </div>
+     </section>
+     <!-- 页脚 -->
+     <footer>
+         <p>大风大浪集团 © 2026 版权所有</p>
+     </footer>
+ </body>
+ </html>
